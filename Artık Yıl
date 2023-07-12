@@ -1,0 +1,20 @@
+import java.util.*;
+
+public class ArtıkYılHesaplayıcı {
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        int yıl;
+
+        System.out.println("Yıl Giriniz: ");
+        yıl = sc.nextInt();
+
+        boolean artıkYıl = (yıl % 4 == 0 && yıl % 100 != 0) || yıl % 400 == 0;
+
+        if (artıkYıl) {
+            System.out.println(yıl + " Artık  Yıl!");
+        } else {
+            System.out.println(year + " Artık  Yıl Değil!");
+        }
+    }
+}
